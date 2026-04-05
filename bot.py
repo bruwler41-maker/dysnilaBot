@@ -6,7 +6,7 @@ from openai import AsyncOpenAI
 from aiohttp import web
 
 # 1. ДАННЫЕ
-TG_TOKEN = "8150129940:AAFure-gODdMyOkrI04v6OiycEI8o7aBLhw"
+TG_TOKEN = "8150129940:AAHUhaMSbSCb05MyyCJyWZ2Cp0uyoYk_NUI"
 OPENROUTER_KEY = "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"
 
 # 2. НАСТРОЙКИ
