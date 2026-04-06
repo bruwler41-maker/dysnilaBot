@@ -52,7 +52,7 @@ async def neuro_comment(message: types.Message):
 
     try:
         response = await client.chat.completions.create(
-            model="google/gemini-2.0-flash-exp:free",
+            model="openrouter/auto", # OpenRouter сам выберет рабочую бесплатную модель
             messages=[
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": f"Пользователь {message.from_user.first_name} пишет: {message.text}"}
