@@ -51,7 +51,7 @@ async def neuro_comment(message: types.Message):
     try:
         # Используем мощную и стабильную бесплатную модель Llama 3.1
         response = await client.chat.completions.create(
-            model="meta-llama/llama-3.1-8b-instruct:free", 
+           model="mistralai/mistral-7b-instruct:free", 
             messages=[
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": message.text}
